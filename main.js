@@ -2,9 +2,9 @@ let principio = "Puede escoger entre varias opciones: rodio, oro, paladio, plati
 
 alert(principio)
 
-let PlataoOro = prompt("¿El precio de qué metal desea calcular?");
+let PlataoOro = prompt("¿El precio de qué metal desea calcular?").toLowerCase();
 
-switch (PlataoOro.toLowerCase()) {
+switch (PlataoOro) {
 case "rodio" :
 	alert("Escogiste rodio. Presiona ENTER para calcular el precio del rodio");
 break;
@@ -44,22 +44,22 @@ function operacion(valor1, valor2) {
 	alert("El valor de tu metal es de $" + resultado);
 }
 
-if (PlataoOro.toLowerCase() == "rodio") {
+if (PlataoOro == "rodio") {
 	let gramos = prompt("¿Cuántos gramos de rodio desea calcular?");
 	operacion (PrecioRodio, gramos);
-} else if (PlataoOro.toLowerCase() == "oro") {
+} else if (PlataoOro == "oro") {
 	let gramos = prompt("¿Cuántos gramos de oro desea calcular?");
 	operacion(PrecioOro, gramos);
-} else if (PlataoOro.toLowerCase() == "paladio") {
+} else if (PlataoOro == "paladio") {
 	let gramos = prompt("¿Cuántos gramos de paladio desea calcular?");
 	operacion(PrecioPaladio, gramos);
-} else if (PlataoOro.toLowerCase() == "platino") {
+} else if (PlataoOro == "platino") {
 	let gramos = prompt("¿Cuántos gramos de platino desea calcular?");
 	operacion(PrecioPlatino, gramos);
-} else if (PlataoOro.toLowerCase() == "plata") {
+} else if (PlataoOro == "plata") {
 	let gramos = prompt("¿Cuántos gramos de plata desea calcular?");
 	operacion(PrecioPlata, gramos);
-} else if (PlataoOro.toLowerCase() == "bronce") {
+} else if (PlataoOro == "bronce") {
 	let gramos = prompt("¿Cuántos gramos de bronce desea calcular?")
 	operacion(PrecioBronce, gramos);
  }

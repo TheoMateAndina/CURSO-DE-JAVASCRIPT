@@ -41,7 +41,7 @@ const PrecioBronce = 0.8;
 
 function operacion(valor1, valor2) {
 	let resultado = valor1 * valor2;
-	alert("El valor de tu metal es de $" + resultado);
+	alert("El valor de tu metal es de $" + resultado.toFixed(2));
 }
 
 if (PlataoOro == "rodio") {
